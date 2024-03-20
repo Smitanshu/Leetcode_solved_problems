@@ -1,2 +1,2 @@
 # Leetcode_solved_problems
-Leetcode solved Problems in c++. 
+Array of solved leetcode problems in c++.
