@@ -16,6 +16,7 @@ bool check(int arr[], int size, int index)
     {
         // Recursive relation
         bool nextans = check(arr, size, index + 1);
+        return nextans;
     }
 
     else
