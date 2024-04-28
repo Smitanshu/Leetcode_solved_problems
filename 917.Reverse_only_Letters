@@ -1,0 +1,30 @@
+//My solution Link :
+//https://leetcode.com/problems/reverse-only-letters/solutions/5082207/100-beats-solution-in-c
+
+//Problem Link:
+//https://leetcode.com/problems/reverse-only-letters/description/
+
+class Solution {
+public:
+    string reverseOnlyLetters(string s) {
+        int l=0;
+        int h=s.size()-1;
+
+    while(l<h){  //no need of l<=h avoid swap at same position
+      
+        if(isalpha(s[l]) && isalpha(s[h])){  //
+
+            swap(s[l], s[h]);
+            l++;
+            h--;
+        }
+        else if(!isalpha(s[l])){ //if s[l] is not alphabet then increament the low
+            l++;
+        }
+        else{  //if s[h] is not character->>decrement the high 
+            h--;
+        }
+    }
+     return s;   
+    }
+};
