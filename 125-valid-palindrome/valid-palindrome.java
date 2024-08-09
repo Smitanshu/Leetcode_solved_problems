@@ -7,6 +7,7 @@ class Solution {
         }
         int start = 0;
         int end = s.length() - 1;
+         s=s.toLowerCase();
         while (start < end) {
 
             while (start < end && !Character.isLetterOrDigit(s.charAt(start))) {
