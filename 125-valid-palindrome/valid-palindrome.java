@@ -19,7 +19,7 @@ class Solution {
 
             }
 
-            if (Character.toLowerCase(s.charAt(start)) != Character.toLowerCase(s.charAt(end))) {
+            if (s.charAt(start) !=s.charAt(end)) {
 
                 return false;
             }
