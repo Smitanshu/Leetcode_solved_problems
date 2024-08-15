@@ -4,9 +4,9 @@ class Solution {
            int ans=0;
         for(int i=1; i<arr.length;i++){
 
-            if(arr[i-1]>arr[i] && arr[i]<arr[i-1]){
+            if((i+1)<arr.length &&  arr[i]>arr[i+1]){
 
-                ans=i-1;
+                ans=i;
                 break;
             }
         }
