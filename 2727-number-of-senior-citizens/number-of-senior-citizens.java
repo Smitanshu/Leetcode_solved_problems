@@ -12,7 +12,7 @@ class Solution {
 
             for(int j=0; j<1;j++){
 
-                 int a = Character.getNumericValue(curr.charAt(11)) * 10 + Character.getNumericValue(curr.charAt(12));
+                 int a = Character.getNumericValue(curr.charAt(11)) * 10 + Character.       getNumericValue(curr.charAt(12));
                nums[index]=a;
                index++;
 
