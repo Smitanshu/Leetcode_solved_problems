@@ -4,7 +4,6 @@ class Solution {
         if(m*n!=original.length){
             return new int[0][0];
         }
-       
           int k=0; 
           int[][] ans=new int[m][n];
         for(int i=0; i<original.length; i++){
