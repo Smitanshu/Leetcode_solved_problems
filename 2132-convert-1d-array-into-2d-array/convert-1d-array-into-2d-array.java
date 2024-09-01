@@ -1,25 +1,19 @@
 class Solution {
     public int[][] construct2DArray(int[] original, int m, int n) {
         
-          int index=0;
-
-            int [][]nums=new int[m][n];
-            int [][]nums2=new int[0][0];
-
-       
-     if(original.length>m*n ||original.length<m*n ){
-        return nums2;
-     }
-
-        for(int i=0; i<m;i++){
-            for(int j=0; j<n;j++){
-               
-               nums[i][j]=original[index];
-               index++;
-
-            }
+        if(m*n!=original.length){
+            return new int[0][0];
         }
-        
-        return nums;
+       
+          int k=0; 
+          int[][] ans=new int[m][n];
+        for(int i=0; i<original.length; i++){
+            
+            ans[i/n][i%n]=original[i];
+
+            
+        }
+      
+return ans;
     }
 }
