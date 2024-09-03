@@ -3,10 +3,6 @@ class Solution {
       int ans=0;
         outer:
         while(true){
-            
-
-
-
             for(int i=0; i<chalk.length;i++){
 
                 if(chalk[i]<=k){
